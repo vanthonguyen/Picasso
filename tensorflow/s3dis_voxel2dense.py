@@ -5,7 +5,7 @@ import glob
 from sklearn.neighbors import NearestNeighbors
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--dense_dir', required=True, help='path to tfrecord data')
+parser.add_argument('--dense_dir', required=True, help='path to the raw dense point cloud data')
 parser.add_argument('--voxel_dir', default='../log_s3dis_plain/test_results',
                     help='Log dir [default: ../log_s3dis_plain/test_results]')
 opt = parser.parse_args()
