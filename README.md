@@ -42,8 +42,8 @@ $ cd picasso/point/modules/source
 $ ./compile.sh
 ```
 
--- ### Data Preparation
--- We provide files in the `io' folder to process raw meshes to tfrecord format for Tensorflow usage:
+- ### Data Preparation
+- We provide files in the `io' folder to process raw meshes to tfrecord format for Tensorflow usage:
 ```
 cd io
 python make_tfrecord_shapenetcore.py 
@@ -51,8 +51,8 @@ python make_tfrecord_human.py
 python make_tfrecord_scannet.py  
 python make_tfrecord_s3dis.py    
 ```
--- ### Usage  
--- All of the trained models and our results on ShapeNet and S3DIS can be downloaded from [this link](https://drive.google.com/open?id=1-085Tp4RI3eNbZSlOUo7T_F2qcjB8JeE).
+- ### Usage  
+- All of the trained models and our results on ShapeNet and S3DIS can be downloaded from [this link](https://drive.google.com/open?id=1-085Tp4RI3eNbZSlOUo7T_F2qcjB8JeE).
 - **ShapeNetCore**
   * To train a model to classify the 55 object classes:
     ```
