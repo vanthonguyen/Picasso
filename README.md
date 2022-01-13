@@ -43,7 +43,7 @@ $ ./compile.sh
 ```
 
 2. Data Preparation
-- We provide files in the `io' folder to process raw meshes to tfrecord format for Tensorflow usage:
+We provide files in the <io> folder to process raw meshes to tfrecord format for Tensorflow usage:
 ```
 cd io
 python make_tfrecord_shapenetcore.py 
