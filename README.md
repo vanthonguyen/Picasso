@@ -33,13 +33,13 @@ If you find our work useful in your research, please consider citing:
 Our code is released under MIT License (see LICENSE file for details).
 
 ### Tensorflow Installation
-Install [Tensorflow](https://www.tensorflow.org/install). The code was tested with Python 3.8, Tensorflow 2.4, Cuda 11.0 and Cudnn 8.0 on Ubuntu 18.04. The used GPU is NVIDIA GeForce RTX 3090.   
+For tensorflow users, please use the provides package in **tensorflow** folder. The code was tested with Python 3.8, Tensorflow 2.4, Cuda 11.0 and Cudnn 8.0 on Ubuntu 18.04. The used GPU is NVIDIA GeForce RTX 3090.   
 **Note: We assumed that the GPU supports a block of 1024 threads. 
   
-Please compile the cuda-based operations using the command
+Please compile the cuda-based operations for tensorflow using the commands:
 ```
-(sudo) ./tensorflow/picasso/mesh/modules/source/compile.sh
-(sudo) ./tensorflow/picasso/point/modules/source/compile.sh
+(sudo) ./picasso/mesh/modules/source/compile.sh
+(sudo) ./picasso/point/modules/source/compile.sh
 ```
 
 ### Data Preparation
