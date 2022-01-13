@@ -32,14 +32,16 @@ If you find our work useful in your research, please consider citing:
 ### License
 Our code is released under MIT License (see LICENSE file for details).
 
-### Tensorflow Installation
+## Tensorflow Installation
 For tensorflow users, please use the provides package in *tensorflow* folder. The code was tested with Python 3.8, Tensorflow 2.4, Cuda 11.0 and Cudnn 8.0 on Ubuntu 18.04. The used GPU is NVIDIA GeForce RTX 3090.   
 **Note: We assumed that the GPU supports a block of 1024 threads. 
   
 Please compile the cuda-based operations for tensorflow using the commands:
 ```
-(sudo) ./picasso/mesh/modules/source/compile.sh
-(sudo) ./picasso/point/modules/source/compile.sh
+$ cd picasso/mesh/modules/source
+$ ./compile.sh
+$ cd picasso/point/modules/source
+$ ./compile.sh
 ```
 
 ### Data Preparation
@@ -90,12 +92,14 @@ All of the trained models and our results on ShapeNet and S3DIS can be downloade
        python s3dis_voxel2dense.py --dense_dir=../TFdata/S3DIS_Aligned_dense_PointCloud	
     ```
 
-### Pytorch Installation
+## Pytorch Installation
 Install [Pytorch](https://pytorch.org/get-started/locally/). The code was tested with Python 3.8, Pytorch 10, Cuda 11.3 and Cudnn 8.2 on Ubuntu 18.04. The used GPU is NVIDIA GeForce RTX 3090.   
 **Note: We assumed that the GPU supports a block of 1024 threads. 
   
 Please compile the cuda-based operations for meshes using the command
 ```
-python ./pytorch/picasso/mesh/modules/source/setup.py install
-python ./pytorch/picasso/point/modules/source/setup.py install
+$ cd picasso/mesh/modules/source
+$ python setup.py install
+$ cd picasso/point/modules/source
+$ python setup.py install
 ```
