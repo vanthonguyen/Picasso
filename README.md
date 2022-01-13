@@ -32,9 +32,9 @@ If you find our work useful in your research, please consider citing:
 
 ## Tensorflow 
 1. #### Installation
-For tensorflow users, please use the provides package in *tensorflow* folder. The code was tested with Python 3.8, Tensorflow 2.4, Cuda 11.0 and Cudnn 8.0 on Ubuntu 18.04. **Note: We assumed that the GPU supports a block of 1024 threads.** 
+- For tensorflow users, please use the provides package in *tensorflow* folder. The code was tested with Python 3.8, Tensorflow 2.4, Cuda 11.0 and Cudnn 8.0 on Ubuntu 18.04. **Note: We assumed that the GPU supports a block of 1024 threads.** 
   
-Please compile the cuda-based operations for tensorflow using the following commands:
+- Please compile the cuda-based operations for tensorflow using the following commands:
 ```
 $ cd picasso/mesh/modules/source
 $ ./compile.sh
@@ -43,7 +43,7 @@ $ ./compile.sh
 ```
 
 2. Data Preparation
-We provide files in the <io> folder to process raw meshes to tfrecord format for Tensorflow usage:
+- We provide files in the <io> folder to process raw meshes to tfrecord format for Tensorflow usage:
 ```
 cd io
 python make_tfrecord_shapenetcore.py 
