@@ -60,7 +60,7 @@ python make_tfrecord_s3dis.py
     ```
   * To test the classification results with augmentations:
     ```
-    python evaluate_shapenetcore.py --ckpt_epoch=83 -num_augment=20 --data_dir=../TFdata/ShapeNetCore
+    python evaluate_shapenetcore.py --ckpt_epoch=#checkpoint -num_augment=20 --data_dir=../TFdata/ShapeNetCore
     ```
 
 - **HUMAN BODY**   
@@ -76,7 +76,7 @@ python make_tfrecord_s3dis.py
     ```
   * test
     ```
-    python evaluate_scannet_plain.py --ckpt_epoch=77 --num_augment=20 --gpu=0 --data_dir=../TFdata/ScanNet_goodRGB 
+    python evaluate_scannet_plain.py --ckpt_epoch=#checkpoint --num_augment=20 --gpu=0 --data_dir=../TFdata/ScanNet
     ```
 
 - **S3DIS**    
@@ -86,8 +86,8 @@ python make_tfrecord_s3dis.py
     ```
   * test   
     ```
-    python evaluate_s3dis_plain.py --ckpt_epoch=55 --num_augment=20 --gpu=0 --data_dir=../TFdata/S3DIS_Aligned_3cm_Mesh
-       python s3dis_voxel2dense.py --dense_dir=../TFdata/S3DIS_Aligned_dense_PointCloud	
+    python evaluate_s3dis_plain.py --ckpt_epoch=#checkpoint --num_augment=20 --gpu=0 --data_dir=../TFdata/S3DIS_Aligned_3cm_Mesh
+       python s3dis_voxel2dense.py --dense_dir=../RAWdata/S3DIS_Aligned_dense_PointCloud	
     ```
 
 ## Pytorch Installation
