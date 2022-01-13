@@ -30,9 +30,9 @@ If you find our work useful in your research, please consider citing:
 } 
 ```
 
-## Tensorflow Installation
-For tensorflow users, please use the provides package in *tensorflow* folder. The code was tested with Python 3.8, Tensorflow 2.4, Cuda 11.0 and Cudnn 8.0 on Ubuntu 18.04. The used GPU is NVIDIA GeForce RTX 3090.   
-**Note: We assumed that the GPU supports a block of 1024 threads. 
+## Tensorflow 
+1. #### Installation
+For tensorflow users, please use the provides package in *tensorflow* folder. The code was tested with Python 3.8, Tensorflow 2.4, Cuda 11.0 and Cudnn 8.0 on Ubuntu 18.04. **Note: We assumed that the GPU supports a block of 1024 threads. 
   
 Please compile the cuda-based operations for tensorflow using the following commands:
 ```
