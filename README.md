@@ -86,8 +86,8 @@ python make_tfrecord_s3dis.py
     ```
   * test   
     ```
-    python evaluate_s3dis_plain.py --ckpt_epoch=#checkpoint --num_augment=20 --gpu=0 --data_dir=../TFdata/S3DIS_Aligned_3cm_Mesh
-       python s3dis_voxel2dense.py --dense_dir=../RAWdata/S3DIS_Aligned_dense_PointCloud	
+    $ python evaluate_s3dis_plain.py --ckpt_epoch=#checkpoint --num_augment=20 --gpu=0 --data_dir=../TFdata/S3DIS_Aligned_3cm_Mesh
+    $ python s3dis_voxel2dense.py --dense_dir=../RAWdata/S3DIS_Aligned_dense_PointCloud	
     ```
 
 ## Pytorch Installation
