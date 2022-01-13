@@ -1,4 +1,4 @@
-## Geometric Feature Learning for 3D Meshes
+# Geometric Feature Learning for 3D Meshes
 
 ![alt text](https://github.com/EnyaHermite/Picasso/blob/main/image/teaser.png)
 
