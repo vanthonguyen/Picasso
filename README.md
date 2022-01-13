@@ -29,8 +29,6 @@ If you find our work useful in your research, please consider citing:
   year={2021}
 } 
 ```
-### License
-Our code is released under MIT License (see LICENSE file for details).
 
 ## Tensorflow Installation
 For tensorflow users, please use the provides package in *tensorflow* folder. The code was tested with Python 3.8, Tensorflow 2.4, Cuda 11.0 and Cudnn 8.0 on Ubuntu 18.04. The used GPU is NVIDIA GeForce RTX 3090.   
