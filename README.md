@@ -45,44 +45,44 @@ $ ./compile.sh
 2. Data Preparation
 - We provide files in the <io> folder to process raw meshes to tfrecord format for Tensorflow usage:
 ```
-cd io
-python make_tfrecord_shapenetcore.py 
-python make_tfrecord_human.py 
-python make_tfrecord_scannet.py  
-python make_tfrecord_s3dis.py    
+$ cd io
+$ python make_tfrecord_shapenetcore.py 
+$ python make_tfrecord_human.py 
+$ python make_tfrecord_scannet.py  
+$ python make_tfrecord_s3dis.py    
 ```
 3. Training and Testing
 - All of the trained models and our results on ShapeNet and S3DIS can be downloaded from [this link](https://drive.google.com/open?id=1-085Tp4RI3eNbZSlOUo7T_F2qcjB8JeE).
 - **ShapeNetCore**
   * To train a model to classify the 55 object classes:
     ```
-    ./train_shapenetcore.sh  
+    $ ./train_shapenetcore.sh  
     ```
   * To test the classification results with augmentations:
     ```
-    python evaluate_shapenetcore.py --ckpt_epoch=#checkpoint -num_augment=20 --data_dir=../TFdata/ShapeNetCore
+    $ python evaluate_shapenetcore.py --ckpt_epoch=#checkpoint -num_augment=20 --data_dir=../TFdata/ShapeNetCore
     ```
 
 - **HUMAN BODY**   
   * To train a model to segment different parts of the human body:
     ```
-    ./train_human.sh
+    $ ./train_human.sh
     ```
 
 - **ScanNet V2**  
   * train 
     ```  
-    ./train_scannet.sh
+    $ ./train_scannet.sh
     ```
   * test
     ```
-    python evaluate_scannet_plain.py --ckpt_epoch=#checkpoint --num_augment=20 --gpu=0 --data_dir=../TFdata/ScanNet
+    $ python evaluate_scannet_plain.py --ckpt_epoch=#checkpoint --num_augment=20 --gpu=0 --data_dir=../TFdata/ScanNet
     ```
 
 - **S3DIS**    
   * train  
     ```   
-    ./train_s3dis.sh
+    $ ./train_s3dis.sh
     ```
   * test   
     ```
