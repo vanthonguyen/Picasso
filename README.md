@@ -1,4 +1,6 @@
+<p align="center">
 # Geometric Feature Learning for 3D Meshes
+</p>
 
 ![alt text](https://github.com/EnyaHermite/Picasso/blob/main/image/teaser.png)
 
