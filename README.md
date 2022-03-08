@@ -9,8 +9,6 @@
 
 Geometric feature learning for 3D meshes is central to computer graphics and highly important for numerous vision applications. However, deep learning currently lags in hierarchical modeling of heterogeneous 3D meshes due to the lack of required operations and/or their efficient implementations. In this paper, we propose a series of modular operations for effective geometric deep learning over heterogeneous 3D meshes. These operations include mesh convolutions, (un)pooling and efficient mesh decimation. We provide open source implementation of these operations, collectively termed Picasso. The mesh decimation module of Picasso is GPU-accelerated, which can process a batch of meshes on-the-fly for deep learning. Our (un)pooling operations compute features for newly-created neurons across network layers of varying resolution. Our mesh convolutions include facet2vertex, vertex2facet, and facet2facet convolutions that exploit vMF mixture and Barycentric interpolation to incorporate fuzzy modelling. Leveraging the modular operations of Picasso, we contribute a novel hierarchical neural network, PicassoNet-II, to learn highly discriminative features from 3D meshes. PicassoNet-II accepts primitive geometrics and fine textures of mesh facets as input features, while processing full scene meshes. Our network achieves highly competitive performance for shape analysis and scene parsing on a variety of benchmarks. We release Picasso and PicassoNet-II from Github.
 
-###TODO: upload code; finish ReadMe; make picasso pip installable.### 
-
 ### Citation
 If you find our work useful in your research, please consider citing:
 
