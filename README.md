@@ -45,7 +45,7 @@ $ ./compile.sh
 ```
 
 2. Data Preparation
-- We provide files in the <io> folder to process raw meshes to tfrecord format for Tensorflow usage:
+- We provide files in the `io' folder to process raw meshes to tfrecord format for Tensorflow usage. The raw meshes for HUMAN Body segmentation, ShapeNetCore, and S3DIS datasets can be downloaded from [this link](https://drive.google.com/drive/folders/1wyOpd5YnE9nUKe2m6oWQz9DgOLXCKwTg).
 ```
 $ cd io
 $ python make_tfrecord_shapenetcore.py 
@@ -54,7 +54,6 @@ $ python make_tfrecord_scannet.py
 $ python make_tfrecord_s3dis.py    
 ```
 3. Training and Testing
-- All of the trained models and our results on ShapeNet and S3DIS can be downloaded from [this link](https://drive.google.com/open?id=1-085Tp4RI3eNbZSlOUo7T_F2qcjB8JeE).
 - **ShapeNetCore**
   * To train a model to classify the 55 object classes:
     ```
