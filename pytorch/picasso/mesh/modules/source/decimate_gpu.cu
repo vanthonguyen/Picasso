@@ -659,7 +659,8 @@ void meshDecimationLauncher(const bool useArea, const float wgtBnd,     //hyperp
         //cudaDeviceSynchronize();
     }
 
-    int h_vtReplace[Nv] = {0};
+    //int h_vtReplace[Nv] = {0};
+    int* h_vtReplace = new int[Nv]();
     int* h_edgeOut = new int[2*Ne];
     cudaMemcpy(h_edgeOut, edgeOut, 2*Ne*sizeof(int), cudaMemcpyDeviceToHost);
 
@@ -744,6 +745,7 @@ void meshDecimationLauncher(const bool useArea, const float wgtBnd,     //hyperp
     delete[] h_mfIn;
     delete[] h_nv2Remove;
     delete[] h_edgeOut;
+    delete[] h_vtReplace;
 }
 
 
