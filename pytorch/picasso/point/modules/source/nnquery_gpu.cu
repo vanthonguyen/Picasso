@@ -6,7 +6,7 @@
 #define M_PI           3.14159265358979323846F  /* pi */
 #endif
 
-typedef long int LLint;
+typedef long long LLint;
 
 struct point3d
 {

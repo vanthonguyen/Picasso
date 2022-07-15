@@ -1,8 +1,8 @@
-#include <torch/extension.h>
 #include <vector>
+#include <torch/extension.h>
 //#include <iostream>
 
-typedef long int LLint;
+typedef long long LLint;
 
 // CUDA forward and backward declarations
 LLint countSphereNeighborLauncher(int B, int Np, int Mp, float radius, int nnSample, const float* database,
@@ -62,7 +62,7 @@ std::vector<torch::Tensor> BuildSphereNeighbor(
 
     // create an output tensor
     auto cnt_info = torch::zeros({Mp}, database.options().dtype(torch::kInt64));
-    LLint* cntInfo_ptr = cnt_info.data_ptr<long int>();
+    LLint* cntInfo_ptr = cnt_info.data_ptr<LLint>();
     LLint Nout = countSphereNeighborLauncher(B, Np, Mp, radius, nn_sample,
                                              database_ptr, query_ptr, nvDatabase_ptr, nvQuery_ptr, cntInfo_ptr);
 
@@ -115,7 +115,7 @@ std::vector<torch::Tensor> BuildCubeNeighbor(
 
     // create an output tensor
     auto cnt_info = torch::zeros({Mp}, database.options().dtype(torch::kInt64));
-    LLint* cntInfo_ptr = cnt_info.data_ptr<long int>();
+    LLint* cntInfo_ptr = cnt_info.data_ptr<LLint>();
     LLint Nout = countCubeNeighborLauncher(B, Np, Mp, length, nn_sample, database_ptr, query_ptr,
                                            nvDatabase_ptr, nvQuery_ptr, cntInfo_ptr);
 
